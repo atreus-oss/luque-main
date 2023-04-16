@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script><!--Hace referencia para utilizar alertas personalizadas-->
+        <link rel="shortcut icon" href="/img/weather.png" type="image/x-icon">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/info.css">
+        <title>Meteorologia</title>
+    </head>
+
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img src="/img/logo.svg" style="width: 105px;" alt="Luque Diferente"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span><!--Aqui le indicamos que cuando se utilice pantallas mas pequeñas que se oculte el contenido del navbar y que se almacene dentro de un icono-->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link text-primary active" href="../index.html">Inicio</a>
+              <a class="nav-link text-warning" href="/html/recreacion.html">Entretenimiento</a>
+              <a class="nav-link text-primary" href="#">Información del Clima</a>
+              <a class="nav-link text-dark" href="/html/profiles.html">Perfiles de GitHub</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+          <main>
+            <div class="search-form">
+              <form id="search-form">
+                <div class="searchbox">
+                  <input type="text" autocomplete="off" placeholder="Buscar ciudad..." class="search" id="searchbox" />
+                </div>
+              </form>
+            </div>
+            <div class="weather-card" id="card">
+              <div class="city text-light" id="city"></div>
+              <div class="date text-light" id="date"></div>
+              <div class="temperature text-light">
+                <img src="/img/clima/temp-mid.png" class="temp-img" id="temp-img" />
+                <div class="temp text-light" id="temp"></div>
+              </div>
+              <div class="weather text-light" id="weather"></div>
+              <div class="range text-light" id="range"></div>
+            </div>
+          </main>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/info.js"></script>
+    </body>
+</html>

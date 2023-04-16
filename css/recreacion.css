@@ -1,0 +1,82 @@
+.navbar{
+    font-size: 2.1em;
+}
+
+.btn{
+    font-size: 17.2px;
+}
+
+*{
+    font-family: 'Bell MT', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: #171717;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.container .title{
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.container .site-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 2rem;
+}
+
+.container .site-container .product{
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+
+.container .site-container .product:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0rem;
+}
+
+.container .site-container .product img{
+    height: 15rem;
+}
+
+.container .site-container .product:hover img{
+    transform: scale(.9);
+}
+
+.container .site-container .product h3{
+    padding: 5rem 0;
+    font-size: 2rem;
+    color: #444;
+}
+
+.container .site-container .product:hover h3{
+    color: #0907a3;
+}
+
+.btn:hover{
+    background: #ffc400;
+    color: #0907a3;
+    border: #ffc400;
+}

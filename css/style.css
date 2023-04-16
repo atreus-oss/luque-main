@@ -1,0 +1,26 @@
+body{
+    background: #171717;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.nav-link{
+    font-weight: 600;
+    font-family: 'Bell MT', sans-serif;
+}
+
+h1{
+    font-family: 'Bell MT', sans-serif;
+}
+
+.btn:hover{
+    background: #ffc400;
+    color: #0907a3;
+    border: #ffc400;
+}
+
+.card-body{
+    background: #171717;
+}
